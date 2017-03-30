@@ -3,13 +3,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using System.Drawing;
 using System.Diagnostics;
-using System.Windows.Forms;
 using System.Linq;
 using System.Xml.Linq;
 using SwinGameSDK;
-namespace BattleShip
+namespace Battleship
 {
 
 	/// <summary>
@@ -160,9 +158,9 @@ namespace BattleShip
 			isHuman = object.ReferenceEquals(_theGame.Player, HumanPlayer);
 
 			if (isHuman) {
-				Message = "You " + result.ToString();
+				UtilityFunctions.Message = "You " + result.ToString();
 			} else {
-				Message = "The AI " + result.ToString();
+				UtilityFunctions.Message = "The AI " + result.ToString();
 			}
 
 			switch (result.Value) {
@@ -352,7 +350,7 @@ namespace BattleShip
 		public static void AddNewState(GameState state)
 		{
 			_state.Push(state);
-			Message = "";
+			UtilityFunctions.Message = "";
 		}
 
 		/// <summary>

@@ -3,13 +3,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using System.Drawing;
 using System.Diagnostics;
-using System.Windows.Forms;
 using System.Linq;
 using System.Xml.Linq;
 using SwinGameSDK;
-namespace BattleShip
+namespace Battleship
 {
 
 	/// <summary>
@@ -115,7 +113,7 @@ namespace BattleShip
 						GameController.HumanPlayer.PlayerGrid.MoveShip(row, col, _selectedShip, _currentDirection);
 					} catch (Exception ex) {
 						Audio.PlaySoundEffect(GameResources.GameSound("Error"));
-						Message = ex.Message;
+						UtilityFunctions.Message = ex.Message;
 					}
 				}
 			}

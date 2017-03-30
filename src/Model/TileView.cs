@@ -3,12 +3,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using System.Drawing;
 using System.Diagnostics;
-using System.Windows.Forms;
 using System.Linq;
 using System.Xml.Linq;
-namespace BattleShip
+namespace Battleship
 {
 	/// <summary>
 	/// The values that are visable for a given tile.

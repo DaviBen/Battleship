@@ -3,13 +3,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using System.Drawing;
 using System.Diagnostics;
-using System.Windows.Forms;
 using System.Linq;
 using System.Xml.Linq;
 using SwinGameSDK;
-namespace BattleShip
+namespace Battleship
 {
 
 	public static class GameResources
@@ -272,18 +270,16 @@ namespace BattleShip
 
 		private static void FreeFonts()
 		{
-			Font obj = null;
-			foreach (Font obj_loopVariable in _Fonts.Values) {
-				obj = obj_loopVariable;
+			Font obj = default(Font);
+			foreach ( obj in _Fonts.Values) {
 				SwinGame.FreeFont(obj);
 			}
 		}
 
 		private static void FreeImages()
 		{
-			Bitmap obj = null;
-			foreach (Bitmap obj_loopVariable in _Images.Values) {
-				obj = obj_loopVariable;
+			Bitmap obj = default(Bitmap);
+			foreach ( obj in _Images.Values) {
 				SwinGame.FreeBitmap(obj);
 			}
 		}

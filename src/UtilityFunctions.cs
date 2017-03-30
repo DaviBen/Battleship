@@ -3,12 +3,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using System.Drawing;
 using System.Diagnostics;
-using System.Windows.Forms;
 using System.Linq;
 using System.Xml.Linq;
-namespace BattleShip
+namespace Battleship
 {
 	/// <summary>
 	/// This includes a number of utility methods for
@@ -271,7 +269,7 @@ namespace BattleShip
 		private static void AddAnimation(int row, int col, string image)
 		{
 			Sprite s = default(Sprite);
-			Bitmap imgObj = null;
+			Bitmap imgObj = default(Bitmap);
 
 			imgObj = GameResources.GameImage(image);
 			imgObj.SetCellDetails(40, 40, 3, 3, 7);
