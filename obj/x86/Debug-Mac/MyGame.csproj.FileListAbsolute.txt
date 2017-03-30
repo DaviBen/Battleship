@@ -1,0 +1,1 @@
+H:\Battleship\obj\x86\Debug-Mac\MyGame.csprojResolveAssemblyReference.cache
