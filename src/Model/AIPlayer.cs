@@ -4,9 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
-using System.Linq;
-using System.Xml.Linq;
-namespace Battleship
+namespace Test
 {
 	/// <summary>
 	/// The AIPlayer is a type of player. It can readomly deploy ships, it also has the

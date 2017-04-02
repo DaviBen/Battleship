@@ -4,9 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
-using System.Linq;
-using System.Xml.Linq;
-namespace Battleship
+namespace Test
 {
 	/// <summary>
 	/// The SeaGridAdapter allows for the change in a sea grid view. Whenever a ship is

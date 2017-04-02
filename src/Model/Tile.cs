@@ -4,9 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
-using System.Linq;
-using System.Xml.Linq;
-namespace Battleship
+namespace Test
 {
 	/// <summary>
 	/// Tile knows its location on the grid, if it is a ship and if it has been 

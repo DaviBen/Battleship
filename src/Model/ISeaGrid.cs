@@ -4,9 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
-using System.Linq;
-using System.Xml.Linq;
-namespace Battleship
+namespace Test
 {
 	/// <summary>
 	/// The ISeaGrid defines the read only interface of a Grid. This
@@ -15,7 +13,7 @@ namespace Battleship
 	public interface ISeaGrid
 	{
 
-
+ 
 		int Width { get; }
 
 		int Height { get; }

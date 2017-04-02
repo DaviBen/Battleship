@@ -4,9 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
-using System.Linq;
-using System.Xml.Linq;
-namespace Battleship
+namespace Test
 {
 	/// <summary>
 	/// The BattleShipsGame controls a big part of the game. It will add the two players

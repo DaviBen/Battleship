@@ -1,35 +1,24 @@
-using Microsoft.VisualBasic;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Data;
-using System.Diagnostics;
-using System.Linq;
-using System.Xml.Linq;
-namespace Battleship
+﻿static class GameLogic
 {
-	static class GameLogic
+	public static void Main()
 	{
-		public static void Main()
-		{
-			//Opens a new Graphics Window
-			SwinGame.OpenGraphicsWindow("Battle Ships", 800, 600);
+		//Opens a new Graphics Window
+		SwinGame.OpenGraphicsWindow("Battle Ships", 800, 600);
 
-			//Load Resources
-			GameResources.LoadResources();
+		//Load Resources
+		LoadResources();
 
-			SwinGame.PlayMusic(GameResources.GameMusic("Background"));
+		SwinGame.PlayMusic(GameMusic("Background"));
 
-			//Game Loop
-			do {
-				GameController.HandleUserInput();
-				GameController.DrawScreen();
-			} while (!(SwinGame.WindowCloseRequested() == true | GameController.CurrentState == GameState.Quitting));
+		//Game Loop
+		do {
+			HandleUserInput();
+			DrawScreen();
+		} while (!(SwinGame.WindowCloseRequested() == true | CurrentState == GameState.Quitting));
 
-			SwinGame.StopMusic();
+		SwinGame.StopMusic();
 
-			//Free Resources and Close Audio, to end the program.
-			GameResources.FreeResources();
-		}
+		//Free Resources and Close Audio, to end the program.
+		FreeResources();
 	}
 }
