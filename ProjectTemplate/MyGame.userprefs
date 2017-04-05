@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{871B5A90-103A-46A5-BBB9-07C02B9851D1}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Windows|x86" />
+  <MonoDevelop.Ide.ItemProperties.MyGame PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\HighScoreController.cs">
+    <Files>
+      <File FileName="src\UtilityFunctions.cs" Line="137" Column="6" />
+      <File FileName="src\Model\ISeaGrid.cs" Line="31" Column="38" />
+      <File FileName="src\Model\SeaGrid.cs" Line="110" Column="18" />
+      <File FileName="src\Model\SeaGridAdapter.cs" Line="14" Column="66" />
+      <File FileName="src\Model\AIHardPlayer.cs" Line="386" Column="98" />
+      <File FileName="src\HighScoreController.cs" Line="132" Column="22" />
+      <File FileName="src\Model\AIMediumPlayer.cs" Line="52" Column="103" />
+      <File FileName="src\Model\AIPlayer.cs" Line="14" Column="18" />
+      <File FileName="src\Model\Player.cs" Line="223" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>
