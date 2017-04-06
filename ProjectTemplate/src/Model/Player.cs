@@ -214,14 +214,14 @@ public class Player : IEnumerable<Ship>
 	/// has.
 	/// </summary>
 	/// <returns>A Ship enumerator</returns>
-	public static IEnumerator GetEnumerator(Player instance)
+	public IEnumerator GetEnumerator1 ()
 	{
-		Ship[] result = new Ship[_Ships.Values.Count + 1];
-		_Ships.Values.CopyTo(result, 0);
-		List<Ship> lst = new List<Ship>();
-		lst.AddRange(result);
+		Ship [] result = new Ship [_Ships.Values.Count + 1];
+		_Ships.Values.CopyTo (result, 0);
+		List<Ship> lst = new List<Ship> ();
+		lst.AddRange (result);
 
-		return lst.GetEnumerator();
+		return lst.GetEnumerator ();
 	}
 
 	/// <summary>

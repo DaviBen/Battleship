@@ -6,7 +6,7 @@ using SwinGameSDK;
 /// This includes a number of utility methods for
 /// drawing and interacting with the Mouse.
 /// </summary>
-internal static class UtilityFunctions
+static class UtilityFunctions
 {
 	public const int FIELD_TOP = 122;
 	public const int FIELD_LEFT = 349;
@@ -322,7 +322,7 @@ internal static class UtilityFunctions
 		foreach (Sprite s in _Animations)
 		{
 			SwinGame.UpdateSprite(s);
-			if (s.animationHasEnded)
+			if (s.AnimationHasEnded)
 			{
 				ended.Add(s);
 			}
@@ -346,12 +346,9 @@ internal static class UtilityFunctions
 	public static void DrawAnimationSequence()
 	{
 		int i = 0;
-//INSTANT C# NOTE: The ending condition of VB 'For' loops is tested only on entry to the loop. Instant C# has created a temporary variable in order to use the initial value of ANIMATION_CELLS * FRAMES_PER_CELL for every iteration:
-int tempVar = ANIMATION_CELLS * FRAMES_PER_CELL;
-for (i = 1; i <= tempVar; i++)
-{
-			UpdateAnimations();
-			GameController.DrawScreen();
+		for (i = 1; i <= ANIMATION_CELLS * FRAMES_PER_CELL; i++) {
+			UpdateAnimations ();
+			GameController.DrawScreen ();
 		}
 	}
 }

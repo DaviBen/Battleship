@@ -18,7 +18,7 @@ internal static class GameLogic
 		{
 			GameController.HandleUserInput();
 			GameController.DrawScreen();
-		} while (!(SwinGame.WindowCloseRequested() == true || GameController.CurrentState == GameState.Quitting));
+		} while (!(SwinGame.WindowCloseRequested() == true | GameController.CurrentState == GameState.Quitting));
 
 		SwinGame.StopMusic();
 
