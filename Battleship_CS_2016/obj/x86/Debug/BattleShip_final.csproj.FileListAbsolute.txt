@@ -1,6 +1,0 @@
-C:\Users\KwunShan\Desktop\Battleship_CS_2016\bin\Debug\lib\SwinGame.dll.mdb
-C:\Users\KwunShan\Desktop\Battleship_CS_2016\bin\Debug\ConsoleApplication.exe
-C:\Users\KwunShan\Desktop\Battleship_CS_2016\bin\Debug\ConsoleApplication.pdb
-C:\Users\KwunShan\Desktop\Battleship_CS_2016\bin\Debug\SwinGame.dll
-C:\Users\KwunShan\Desktop\Battleship_CS_2016\obj\x86\Debug\ConsoleApplication.exe
-C:\Users\KwunShan\Desktop\Battleship_CS_2016\obj\x86\Debug\ConsoleApplication.pdb
