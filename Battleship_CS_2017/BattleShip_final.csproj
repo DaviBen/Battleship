@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{09883495-1BE3-41B4-A81A-5A8EEB775FE5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>BattleShip_final</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SwinGame, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\SwinGame.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build.sh" />
+    <None Include="clean.sh" />
+    <None Include="lib\cygpath" />
+    <None Include="lib\godly\libSGSDK.dylib" />
+    <None Include="lib\mac\libSGSDK.dylib" />
+    <None Include="lib\sdl13\libSGSDK.dylib" />
+    <None Include="out.log" />
+    <None Include="packages\NUnit.2.6.4\NUnit.2.6.4.nupkg" />
+    <None Include="packages\repositories.config" />
+    <None Include="Resources\fonts\arial.ttf" />
+    <None Include="Resources\fonts\cour.ttf" />
+    <None Include="Resources\fonts\ffaccess.ttf" />
+    <None Include="Resources\fonts\maven_pro_regular.ttf" />
+    <None Include="Resources\sounds\SwinGameStart.ogg" />
+    <None Include="Resources\SwinGame.icns" />
+    <None Include="run.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\SwinGame.dll" />
+    <Content Include="lib\SwinGame.dll.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\win\jpeg.dll" />
+    <Content Include="lib\win\libfreetype-6.dll" />
+    <Content Include="lib\win\libogg-0.dll" />
+    <Content Include="lib\win\libpng12-0.dll" />
+    <Content Include="lib\win\libpng13.dll" />
+    <Content Include="lib\win\libtiff-3.dll" />
+    <Content Include="lib\win\libvorbis-0.dll" />
+    <Content Include="lib\win\libvorbisfile-3.dll" />
+    <Content Include="lib\win\mikmod.dll" />
+    <Content Include="lib\win\ogg.dll" />
+    <Content Include="lib\win\SDL.dll" />
+    <Content Include="lib\win\SDL_gfx.dll" />
+    <Content Include="lib\win\SDL_image.dll" />
+    <Content Include="lib\win\SDL_mixer.dll" />
+    <Content Include="lib\win\SDL_net.dll" />
+    <Content Include="lib\win\SDL_ttf.dll" />
+    <Content Include="lib\win\SGSDK.dll" />
+    <Content Include="lib\win\smpeg.dll" />
+    <Content Include="lib\win\swingame.rc" />
+    <Content Include="lib\win\zlib1.dll" />
+    <Content Include="packages\NUnit.2.6.4\lib\nunit.framework.dll" />
+    <Content Include="packages\NUnit.2.6.4\lib\nunit.framework.xml" />
+    <Content Include="packages\NUnit.2.6.4\license.txt" />
+    <Content Include="Resources\animations\splash.txt" />
+    <Content Include="Resources\animations\startup.txt" />
+    <Content Include="Resources\bundles\FileDialog.txt" />
+    <Content Include="Resources\bundles\splash.txt" />
+    <Content Include="Resources\highscores.txt" />
+    <Content Include="Resources\images\deploy.jpg" />
+    <Content Include="Resources\images\deploy_button_hl.png" />
+    <Content Include="Resources\images\deploy_dir_button_horiz.png" />
+    <Content Include="Resources\images\deploy_dir_button_vert.png" />
+    <Content Include="Resources\images\deploy_play_button.png" />
+    <Content Include="Resources\images\deploy_randomize_button.png" />
+    <Content Include="Resources\images\discover.jpg" />
+    <Content Include="Resources\images\explosion.png" />
+    <Content Include="Resources\images\fdFile.png" />
+    <Content Include="Resources\images\fdFolder.png" />
+    <Content Include="Resources\images\FileDialog_Active.png" />
+    <Content Include="Resources\images\FileDialog_Background.png" />
+    <Content Include="Resources\images\FileDialog_Inactive.png" />
+    <Content Include="Resources\images\FileDialog_Scroll.png" />
+    <Content Include="Resources\images\FileDialog_ScrollSmall.png" />
+    <Content Include="Resources\images\loader_empty.png" />
+    <Content Include="Resources\images\loader_full.png" />
+    <Content Include="Resources\images\main_page.jpg" />
+    <Content Include="Resources\images\ship_deploy_horiz_1.png" />
+    <Content Include="Resources\images\ship_deploy_horiz_2.png" />
+    <Content Include="Resources\images\ship_deploy_horiz_3.png" />
+    <Content Include="Resources\images\ship_deploy_horiz_4.png" />
+    <Content Include="Resources\images\ship_deploy_horiz_5.png" />
+    <Content Include="Resources\images\ship_deploy_vert_1.png" />
+    <Content Include="Resources\images\ship_deploy_vert_2.png" />
+    <Content Include="Resources\images\ship_deploy_vert_3.png" />
+    <Content Include="Resources\images\ship_deploy_vert_4.png" />
+    <Content Include="Resources\images\ship_deploy_vert_5.png" />
+    <Content Include="Resources\images\splash.png" />
+    <Content Include="Resources\images\SplashBack.png" />
+    <Content Include="Resources\images\Swinburne.jpg" />
+    <Content Include="Resources\images\SwinGameAni.jpg" />
+    <Content Include="Resources\images\SwinGameAni.png" />
+    <Content Include="Resources\panels\FileDialog.txt" />
+    <Content Include="Resources\sounds\error.wav" />
+    <Content Include="Resources\sounds\hit.wav" />
+    <Content Include="Resources\sounds\horrordrone.mp3" />
+    <Content Include="Resources\sounds\lose.wav" />
+    <Content Include="Resources\sounds\sink.wav" />
+    <Content Include="Resources\sounds\SwinGameStart.wav" />
+    <Content Include="Resources\sounds\watershot.wav" />
+    <Content Include="Resources\sounds\winner.wav" />
+    <Content Include="Resources\SwinGame.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\DeploymentController.cs" />
+    <Compile Include="src\DiscoveryController.cs" />
+    <Compile Include="src\EndingGameController.cs" />
+    <Compile Include="src\GameController.cs" />
+    <Compile Include="src\GameLogic.cs" />
+    <Compile Include="src\GameResources.cs" />
+    <Compile Include="src\GameState.cs" />
+    <Compile Include="src\HighScoreController.cs" />
+    <Compile Include="src\MenuController.cs" />
+    <Compile Include="src\Model\AIHardPlayer.cs" />
+    <Compile Include="src\Model\AIMediumPlayer.cs" />
+    <Compile Include="src\Model\AIOption.cs" />
+    <Compile Include="src\Model\AIPlayer.cs" />
+    <Compile Include="src\Model\AttackResult.cs" />
+    <Compile Include="src\Model\BattleShipsGame.cs" />
+    <Compile Include="src\Model\Direction.cs" />
+    <Compile Include="src\Model\ISeaGrid.cs" />
+    <Compile Include="src\Model\Player.cs" />
+    <Compile Include="src\Model\ResultOfAttack.cs" />
+    <Compile Include="src\Model\SeaGrid.cs" />
+    <Compile Include="src\Model\SeaGridAdapter.cs" />
+    <Compile Include="src\Model\Ship.cs" />
+    <Compile Include="src\Model\ShipName.cs" />
+    <Compile Include="src\Model\Tile.cs" />
+    <Compile Include="src\Model\TileView.cs" />
+    <Compile Include="src\UtilityFunctions.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
