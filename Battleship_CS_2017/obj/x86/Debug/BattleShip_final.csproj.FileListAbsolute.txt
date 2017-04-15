@@ -10,3 +10,9 @@ C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2016\bin\Debug\Conso
 C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2016\bin\Debug\SwinGame.dll
 C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2016\obj\x86\Debug\ConsoleApplication.exe
 C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2016\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2017\bin\Debug\lib\SwinGame.dll.mdb
+C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2017\bin\Debug\ConsoleApplication.exe
+C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2017\bin\Debug\ConsoleApplication.pdb
+C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2017\bin\Debug\SwinGame.dll
+C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2017\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2017\obj\x86\Debug\ConsoleApplication.pdb
