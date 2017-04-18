@@ -16,3 +16,16 @@ C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2017\bin\Debug\Conso
 C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2017\bin\Debug\SwinGame.dll
 C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2017\obj\x86\Debug\ConsoleApplication.exe
 C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2017\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\Benjamin\Battleship\Battleship_CS_2017\bin\Debug\lib\SwinGame.dll.mdb
+C:\Users\Benjamin\Battleship\Battleship_CS_2017\bin\Debug\ConsoleApplication.exe
+C:\Users\Benjamin\Battleship\Battleship_CS_2017\bin\Debug\ConsoleApplication.pdb
+C:\Users\Benjamin\Battleship\Battleship_CS_2017\bin\Debug\mscorlib.dll
+C:\Users\Benjamin\Battleship\Battleship_CS_2017\bin\Debug\SwinGame.dll
+C:\Users\Benjamin\Battleship\Battleship_CS_2017\bin\Debug\normidna.nlp
+C:\Users\Benjamin\Battleship\Battleship_CS_2017\bin\Debug\normnfc.nlp
+C:\Users\Benjamin\Battleship\Battleship_CS_2017\bin\Debug\normnfd.nlp
+C:\Users\Benjamin\Battleship\Battleship_CS_2017\bin\Debug\normnfkc.nlp
+C:\Users\Benjamin\Battleship\Battleship_CS_2017\bin\Debug\normnfkd.nlp
+C:\Users\Benjamin\Battleship\Battleship_CS_2017\obj\x86\Debug\BattleShip_final.csprojResolveAssemblyReference.cache
+C:\Users\Benjamin\Battleship\Battleship_CS_2017\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\Benjamin\Battleship\Battleship_CS_2017\obj\x86\Debug\ConsoleApplication.pdb
