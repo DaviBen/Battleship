@@ -166,8 +166,9 @@ public class SeaGrid : ISeaGrid
 	/// </summary>
 	/// <param name="row">the row at which is being shot</param>
 	/// <param name="col">the cloumn at which is being shot</param>
+	/// <param name="isAI">if it an AI</param>
 	/// <returns>An attackresult (hit, miss, sunk, shotalready)</returns>
-	public AttackResult HitTile(int row, int col)
+	public AttackResult HitTile(int row, int col, bool isAI)
 	{
 		try {
 			//tile is already hit
@@ -186,7 +187,8 @@ public class SeaGrid : ISeaGrid
 			if (_GameTiles[row, col].Ship.IsDestroyed) {
 				_GameTiles[row, col].Shot = true;
 				_ShipsKilled += 1;
-				return new AttackResult(ResultOfAttack.Destroyed, _GameTiles[row, col].Ship, "destroyed the enemy's", row, col);
+				string text = (isAI) ? "destroyed your" : "destroyed the enemy's";
+				return new AttackResult(ResultOfAttack.Destroyed, _GameTiles[row, col].Ship, text, row, col);
 			}
 
 			//else hit but not destroyed

@@ -25,7 +25,7 @@ public interface ISeaGrid
 	/// Provides access to the given row/column
 	/// </summary>
 	/// <param name="row">the row to access</param>
-	/// <param name="column">the column to access</param>
+	/// <param name="col">the column to access</param>
 	/// <value>what the player can see at that location</value>
 	/// <returns>what the player can see at that location</returns>
 
@@ -35,6 +35,7 @@ public interface ISeaGrid
 	/// </summary>
 	/// <param name="row">the row of the tile</param>
 	/// <param name="col">the column of the tile</param>
+	/// <param name="isAI">if it is the AI hitting</param>
 	/// <returns>the result of the attack</returns>
-	AttackResult HitTile(int row, int col);
+	AttackResult HitTile(int row, int col, bool isAI);
 }

@@ -29,3 +29,9 @@ C:\Users\Benjamin\Battleship\Battleship_CS_2017\bin\Debug\normnfkd.nlp
 C:\Users\Benjamin\Battleship\Battleship_CS_2017\obj\x86\Debug\BattleShip_final.csprojResolveAssemblyReference.cache
 C:\Users\Benjamin\Battleship\Battleship_CS_2017\obj\x86\Debug\ConsoleApplication.exe
 C:\Users\Benjamin\Battleship\Battleship_CS_2017\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\Maxxy1000\Desktop\GitHub\Battleship\Battleship_CS_2017\bin\Debug\lib\SwinGame.dll.mdb
+C:\Users\Maxxy1000\Desktop\GitHub\Battleship\Battleship_CS_2017\bin\Debug\ConsoleApplication.exe
+C:\Users\Maxxy1000\Desktop\GitHub\Battleship\Battleship_CS_2017\bin\Debug\ConsoleApplication.pdb
+C:\Users\Maxxy1000\Desktop\GitHub\Battleship\Battleship_CS_2017\bin\Debug\SwinGame.dll
+C:\Users\Maxxy1000\Desktop\GitHub\Battleship\Battleship_CS_2017\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\Maxxy1000\Desktop\GitHub\Battleship\Battleship_CS_2017\obj\x86\Debug\ConsoleApplication.pdb

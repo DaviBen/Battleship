@@ -82,7 +82,7 @@ public class BattleShipsGame
 		AttackResult newAttack = default(AttackResult);
 		int otherPlayer = (_playerIndex + 1) % 2;
 
-		newAttack = Player.Shoot(row, col);
+		newAttack = Player.Shoot(row, col, (_playerIndex==1));
 
 		//Will exit the game when all players ships are destroyed
 		if (_players[otherPlayer].IsDestroyed) {

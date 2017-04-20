@@ -179,11 +179,11 @@ public class Player : IEnumerable<Ship>
 	/// <param name="row">the row to attack</param>
 	/// <param name="col">the column to attack</param>
 	/// <returns>the result of the attack</returns>
-	internal AttackResult Shoot(int row, int col)
+	internal AttackResult Shoot(int row, int col, bool isAI)
 	{
 		_shots += 1;
 		AttackResult result = default(AttackResult);
-		result = EnemyGrid.HitTile(row, col);
+		result = EnemyGrid.HitTile(row, col, isAI);
 
 		switch (result.Value) {
 			case ResultOfAttack.Destroyed:

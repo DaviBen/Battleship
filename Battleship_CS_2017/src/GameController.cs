@@ -86,7 +86,7 @@ public static class GameController
 				_ai = new AIEasyPlayer(_theGame);
 				break;
 			default:
-				_ai = new AIEasyPlayer(_theGame);
+				_ai = new AIMediumPlayer(_theGame);
 				break;
 		}
 
