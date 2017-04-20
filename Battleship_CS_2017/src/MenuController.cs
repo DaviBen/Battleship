@@ -25,6 +25,7 @@ static class MenuController
 	private static readonly string[][] _menuStructure = {
 		new string[] {
 			"PLAY",
+			"TUTORIAL",
 			"SETUP",
 			"SCORES",
 			"QUIT"
@@ -54,19 +55,20 @@ static class MenuController
 
 	private const int SETUP_MENU = 2;
 	private const int MAIN_MENU_PLAY_BUTTON = 0;
-	private const int MAIN_MENU_SETUP_BUTTON = 1;
-	private const int MAIN_MENU_TOP_SCORES_BUTTON = 2;
+	private const int MAIN_MENU_TUTORIAL_BUTTON = 1;
+	private const int MAIN_MENU_SETUP_BUTTON = 2;
+	private const int MAIN_MENU_TOP_SCORES_BUTTON = 3;
+	private const int MAIN_MENU_QUIT_BUTTON = 4;
 
-	private const int MAIN_MENU_QUIT_BUTTON = 3;
 	private const int SETUP_MENU_EASY_BUTTON = 0;
 	private const int SETUP_MENU_MEDIUM_BUTTON = 1;
 	private const int SETUP_MENU_HARD_BUTTON = 2;
-
 	private const int SETUP_MENU_EXIT_BUTTON = 3;
+
 	private const int GAME_MENU_RETURN_BUTTON = 0;
 	private const int GAME_MENU_SURRENDER_BUTTON = 1;
-
 	private const int GAME_MENU_QUIT_BUTTON = 2;
+
 	private static readonly Color MENU_COLOR = SwinGame.RGBAColor(2, 167, 252, 255);
 
 	private static readonly Color HIGHLIGHT_COLOR = SwinGame.RGBAColor(1, 57, 86, 255);
@@ -172,6 +174,16 @@ static class MenuController
 		DrawButtons(SETUP_MENU, 1, 1);
 	}
 
+	public static void DrawTutorial()
+	{
+		const int SCORES_HEADING = 40;
+		const int SCORES_TOP = 80;
+		const int SCORE_GAP = 30;
+		//Draw tutorial
+		SwinGame.DrawText("   Instructions: How to Play   ", Color.White, GameResources.GameFont("Courier"), 250, SCORES_HEADING);
+
+		DrawButtons(MAIN_MENU);	}
+
 	/// <summary>
 	/// Draw the buttons associated with a top level menu.
 	/// </summary>
@@ -264,6 +276,9 @@ static class MenuController
 		switch (button) {
 			case MAIN_MENU_PLAY_BUTTON:
 				GameController.StartGame();
+				break;
+			case MAIN_MENU_TUTORIAL_BUTTON:
+				GameController.AddNewState(GameState.ViewingTutorial);
 				break;
 			case MAIN_MENU_SETUP_BUTTON:
 				GameController.AddNewState(GameState.AlteringSettings);

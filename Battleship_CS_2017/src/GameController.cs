@@ -320,6 +320,9 @@ public static class GameController
 			case GameState.ViewingGameMenu:
 				MenuController.DrawGameMenu();
 				break;
+			case GameState.ViewingTutorial:
+				MenuController.DrawTutorial();
+				break;
 			case GameState.AlteringSettings:
 				MenuController.DrawSettings();
 				break;

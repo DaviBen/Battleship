@@ -19,6 +19,11 @@ public enum GameState
 	ViewingMainMenu,
 
 	/// <summary>
+	/// The player is looking at the tutorial screen
+	/// </summary>
+	ViewingTutorial,
+
+	/// <summary>
 	/// The player is viewing the game menu
 	/// </summary>
 	ViewingGameMenu,
