@@ -65,7 +65,9 @@
     <None Include="Resources\SwinGame.icns" />
     <None Include="run.sh" />
     <None Include="Resources\images\battleship01.png" />
-    <None Include="Resources\images\battleship02.png" />
+    <None Include="Resources\images\battleship02.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\SwinGame.dll" />

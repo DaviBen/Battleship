@@ -41,3 +41,4 @@ H:\Battleship\Battleship_CS_2017\bin\Debug\ConsoleApplication.pdb
 H:\Battleship\Battleship_CS_2017\bin\Debug\SwinGame.dll
 H:\Battleship\Battleship_CS_2017\obj\x86\Debug\ConsoleApplication.exe
 H:\Battleship\Battleship_CS_2017\obj\x86\Debug\ConsoleApplication.pdb
+H:\Battleship\Battleship_CS_2017\bin\Debug\Resources\images\battleship02.png

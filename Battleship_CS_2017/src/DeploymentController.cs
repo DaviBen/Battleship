@@ -110,6 +110,7 @@ static class DeploymentController
 		row = Convert.ToInt32(Math.Floor((mouse.Y - UtilityFunctions.FIELD_TOP)/ (UtilityFunctions.CELL_HEIGHT + UtilityFunctions.CELL_GAP)));
 		col = Convert.ToInt32(Math.Floor((mouse.X - UtilityFunctions.FIELD_LEFT) / (UtilityFunctions.CELL_WIDTH + UtilityFunctions.CELL_GAP)));
 
+		//Save original position in case of collision
 		Ship original = GameController.HumanPlayer.PlayerGrid.GetShip (_selectedShip);
 		int row_original = original.Row;
 		int col_original = original.Column;
@@ -124,6 +125,7 @@ static class DeploymentController
 				catch (Exception ex) {
 					Audio.PlaySoundEffect(GameResources.GameSound("Error"));
 					UtilityFunctions.Message = ex.Message;
+					//Return ship to original position and direction
 					GameController.HumanPlayer.PlayerGrid.MoveShip(row_original, col_original, _selectedShip, direction_original);
 				}
 			}
