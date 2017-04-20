@@ -10,6 +10,8 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,16 +37,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="SwinGame, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>lib\SwinGame.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="SwinGame">
+      <HintPath>lib\SwinGame.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="build.sh" />
@@ -63,6 +64,8 @@
     <None Include="Resources\sounds\SwinGameStart.ogg" />
     <None Include="Resources\SwinGame.icns" />
     <None Include="run.sh" />
+    <None Include="Resources\images\battleship01.png" />
+    <None Include="Resources\images\battleship02.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\SwinGame.dll" />
@@ -103,7 +106,6 @@
     <Content Include="Resources\images\deploy_dir_button_vert.png" />
     <Content Include="Resources\images\deploy_play_button.png" />
     <Content Include="Resources\images\deploy_randomize_button.png" />
-    <Content Include="Resources\images\discover.jpg" />
     <Content Include="Resources\images\explosion.png" />
     <Content Include="Resources\images\fdFile.png" />
     <Content Include="Resources\images\fdFolder.png" />
@@ -140,8 +142,7 @@
     <Content Include="Resources\sounds\watershot.wav" />
     <Content Include="Resources\sounds\winner.wav" />
     <Content Include="Resources\SwinGame.ico" />
-    <Content Include="Resources\images\Battleship01.png" />
-    <Content Include="Resources\images\Battleship02.png" />
+    <Content Include="Resources\images\discover.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\DeploymentController.cs" />

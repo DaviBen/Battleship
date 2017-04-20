@@ -97,6 +97,15 @@ public class SeaGrid : ISeaGrid
 	}
 
 	/// <summary>
+	/// Returns the ship with Ship Name
+	/// </summary>
+	/// <param name="ship">the ship selected</param>
+	public Ship GetShip(ShipName ship)
+	{
+		return _Ships[ship];
+	}
+
+	/// <summary>
 	/// MoveShips allows for ships to be placed on the seagrid
 	/// </summary>
 	/// <param name="row">the row selected</param>

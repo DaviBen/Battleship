@@ -32,10 +32,6 @@ public static class GameResources
 		NewImage("PlayButton", "deploy_play_button.png");
 		NewImage("RandomButton", "deploy_randomize_button.png");
 
-		//Tutorial
-        NewImage("Tutorial01", "Battleship01.png");
-        NewImage("Tutorial02", "Battleship02.png");
-
 		//Ships
 		int i = 0;
 		for (i = 1; i <= 5; i++) {
@@ -46,6 +42,10 @@ public static class GameResources
 		//Explosions
 		NewImage("Explosion", "explosion.png");
 		NewImage("Splash", "splash.png");
+
+		//Tutorial
+		NewImage("Tutorial01", "battleship01.png");
+		//NewImage("Tutorial02", "battleship02.png");
 
 	}
 

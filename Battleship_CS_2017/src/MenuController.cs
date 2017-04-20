@@ -179,11 +179,16 @@ static class MenuController
 		const int TUTORIAL_HEADING = 40;
 
 		//Draw tutorial
-		SwinGame.DrawBitmap(GameResources.GameImage("Tutorial01"), 0, 0);
-		SwinGame.DrawBitmap(GameResources.GameImage("ShipUD4"), 0, 0);
-		SwinGame.DrawText("   Instructions: How to Play   ", Color.White, GameResources.GameFont("Courier"), 250, TUTORIAL_HEADING);
+		SwinGame.DrawText("Instructions: How to Play   ", Color.White, GameResources.GameFont("Courier"), 270, TUTORIAL_HEADING);
 
-		//DrawButtons(MAIN_MENU);	}
+		SwinGame.DrawBitmap(GameResources.GameImage("Tutorial01"), 50, TUTORIAL_HEADING+100);
+		SwinGame.DrawText("- Place your ships onto the grid.", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING+300);
+
+		SwinGame.DrawBitmap (GameResources.GameImage ("Tutorial02"), 300, TUTORIAL_HEADING+100);
+
+
+		//DrawButtons(MAIN_MENU);
+	}
 
 	/// <summary>
 	/// Draw the buttons associated with a top level menu.

@@ -110,14 +110,21 @@ static class DeploymentController
 		row = Convert.ToInt32(Math.Floor((mouse.Y - UtilityFunctions.FIELD_TOP)/ (UtilityFunctions.CELL_HEIGHT + UtilityFunctions.CELL_GAP)));
 		col = Convert.ToInt32(Math.Floor((mouse.X - UtilityFunctions.FIELD_LEFT) / (UtilityFunctions.CELL_WIDTH + UtilityFunctions.CELL_GAP)));
 
+		Ship original = GameController.HumanPlayer.PlayerGrid.GetShip (_selectedShip);
+		int row_original = original.Row;
+		int col_original = original.Column;
+		Direction direction_original = original.Direction;
+
 		if (row >= 0 & row < GameController.HumanPlayer.PlayerGrid.Height) {
 			if (col >= 0 & col < GameController.HumanPlayer.PlayerGrid.Width) {
 				//if in the area try to deploy
 				try {
 					GameController.HumanPlayer.PlayerGrid.MoveShip(row, col, _selectedShip, _currentDirection);
-					} catch (Exception ex) {
+					} 
+				catch (Exception ex) {
 					Audio.PlaySoundEffect(GameResources.GameSound("Error"));
 					UtilityFunctions.Message = ex.Message;
+					GameController.HumanPlayer.PlayerGrid.MoveShip(row_original, col_original, _selectedShip, direction_original);
 				}
 			}
 		}
