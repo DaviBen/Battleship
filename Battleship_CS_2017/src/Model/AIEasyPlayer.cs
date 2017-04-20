@@ -11,7 +11,8 @@ using System.Diagnostics;
 public class AIEasyPlayer : AIPlayer
 {
 	public AIEasyPlayer(BattleShipsGame controller) : base(controller)
-	{	}
+	{
+	}
 	/// <summary>
 	/// Generate a valid row, column to shoot at
 	/// </summary>
