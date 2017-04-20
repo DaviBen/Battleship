@@ -176,13 +176,14 @@ static class MenuController
 
 	public static void DrawTutorial()
 	{
-		const int SCORES_HEADING = 40;
-		const int SCORES_TOP = 80;
-		const int SCORE_GAP = 30;
-		//Draw tutorial
-		SwinGame.DrawText("   Instructions: How to Play   ", Color.White, GameResources.GameFont("Courier"), 250, SCORES_HEADING);
+		const int TUTORIAL_HEADING = 40;
 
-		DrawButtons(MAIN_MENU);	}
+		//Draw tutorial
+		SwinGame.DrawBitmap(GameResources.GameImage("Tutorial01"), 0, 0);
+		SwinGame.DrawBitmap(GameResources.GameImage("ShipUD4"), 0, 0);
+		SwinGame.DrawText("   Instructions: How to Play   ", Color.White, GameResources.GameFont("Courier"), 250, TUTORIAL_HEADING);
+
+		//DrawButtons(MAIN_MENU);	}
 
 	/// <summary>
 	/// Draw the buttons associated with a top level menu.

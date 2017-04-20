@@ -140,6 +140,8 @@
     <Content Include="Resources\sounds\watershot.wav" />
     <Content Include="Resources\sounds\winner.wav" />
     <Content Include="Resources\SwinGame.ico" />
+    <Content Include="Resources\images\Battleship01.png" />
+    <Content Include="Resources\images\Battleship02.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\DeploymentController.cs" />
