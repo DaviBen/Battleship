@@ -64,7 +64,9 @@
     <None Include="Resources\sounds\SwinGameStart.ogg" />
     <None Include="Resources\SwinGame.icns" />
     <None Include="run.sh" />
-    <None Include="Resources\images\battleship01.png" />
+    <None Include="Resources\images\battleship01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\images\battleship02.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

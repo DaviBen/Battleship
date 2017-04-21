@@ -181,14 +181,17 @@ static class MenuController
 		//Draw tutorial
 		SwinGame.DrawText("Instructions: How to Play   ", Color.White, GameResources.GameFont("Courier"), 270, TUTORIAL_HEADING);
 
-		SwinGame.DrawBitmap(GameResources.GameImage("Tutorial01"), 50, TUTORIAL_HEADING+100);
-		SwinGame.DrawText("- Place your ships onto the grid.", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING+300);
+		SwinGame.DrawBitmap(GameResources.GameImage("Tutorial01"), 40, TUTORIAL_HEADING+80);
+		SwinGame.DrawText("- Place your ships onto the grid.", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING+330);
+        SwinGame.DrawText("- None of the ships can overlap.", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING + 350);
 
-		SwinGame.DrawBitmap (GameResources.GameImage ("Tutorial02"), 300, TUTORIAL_HEADING+100);
+        SwinGame.DrawBitmap (GameResources.GameImage ("Tutorial02"), 430, TUTORIAL_HEADING+80);
+        SwinGame.DrawText("- Place your ships onto the grid.", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 330);
+        SwinGame.DrawText("- None of the ships can overlap.", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 350);
 
 
-		//DrawButtons(MAIN_MENU);
-	}
+        //DrawButtons(MAIN_MENU);
+    }
 
 	/// <summary>
 	/// Draw the buttons associated with a top level menu.
