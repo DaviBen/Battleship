@@ -45,7 +45,7 @@ public static class GameResources
 
 		//Tutorial
 		NewImage("Tutorial01", "battleship01.png");
-		//NewImage("Tutorial02", "battleship02.png");
+		NewImage("Tutorial02", "battleship02.png");
 
 	}
 
