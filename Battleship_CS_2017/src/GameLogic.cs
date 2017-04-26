@@ -25,6 +25,7 @@ static class GameLogic
 		} while (!(SwinGame.WindowCloseRequested() == true | GameController.CurrentState == GameState.Quitting));
 
 		SwinGame.StopMusic();
+		HighScoreController.SaveScores();
 
 		//Free Resources and Close Audio, to end the program.
 		GameResources.FreeResources();

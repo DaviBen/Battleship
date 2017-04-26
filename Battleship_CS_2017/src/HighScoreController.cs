@@ -16,7 +16,8 @@ using SwinGameSDK;
 /// </remarks>
 static class HighScoreController
 {
-	private const int NAME_WIDTH = 3;
+	private const int NAME_WIDTH = 12;
+	private const int VAL_WIDTH  = 3;
 
 	private const int SCORES_LEFT = 490;
 	/// <summary>
@@ -53,7 +54,7 @@ static class HighScoreController
 	/// <remarks>
 	/// The format is
 	/// # of scores
-	/// NNNSSS
+	/// NNNNNNNNNNNNSSS
 	/// 
 	/// Where NNN is the name and SSS is the score
 	/// </remarks>
@@ -96,7 +97,7 @@ static class HighScoreController
 	/// 
 	/// Where NNN is the name and SSS is the score
 	/// </remarks>
-	private static void SaveScores()
+	public static void SaveScores()
 	{
 		string filename = null;
 		filename = SwinGame.PathToResource("highscores.txt");
@@ -192,8 +193,8 @@ static class HighScoreController
 
 			s.Name = SwinGame.TextReadAsASCII();
 
-			if (s.Name.Length < 3) {
-				s.Name = s.Name + new string(Convert.ToChar(" "), 3 - s.Name.Length);
+			if (s.Name.Length < 12) {
+				s.Name = s.Name + new string(Convert.ToChar(" "), 12 - s.Name.Length);
 			}
 
 			_Scores.RemoveAt(_Scores.Count - 1);

@@ -4,32 +4,24 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\DeploymentController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\HighScoreController.cs">
     <Files>
-      <File FileName="src\HighScoreController.cs" Line="1" Column="1" />
-      <File FileName="src\GameController.cs" Line="339" Column="35" />
-      <File FileName="src\Model\AttackResult.cs" Line="1" Column="1" />
-      <File FileName="src\Model\Ship.cs" Line="1" Column="1" />
-      <File FileName="src\Model\ShipName.cs" Line="17" Column="16" />
       <File FileName="src\GameLogic.cs" Line="1" Column="1" />
-      <File FileName="src\GameState.cs" Line="1" Column="1" />
-      <File FileName="src\Model\BattleShipsGame.cs" Line="1" Column="1" />
-      <File FileName="src\Model\Player.cs" Line="1" Column="1" />
-      <File FileName="src\Model\SeaGrid.cs" Line="100" Column="37" />
-      <File FileName="src\Model\ISeaGrid.cs" Line="1" Column="1" />
-      <File FileName="src\Model\SeaGridAdapter.cs" Line="1" Column="1" />
-      <File FileName="src\UtilityFunctions.cs" Line="234" Column="35" />
-      <File FileName="src\MenuController.cs" Line="1" Column="1" />
-      <File FileName="src\GameResources.cs" Line="48" Column="48" />
-      <File FileName="src\DeploymentController.cs" Line="115" Column="35" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\GameController.cs">
-    <Files>
-      <File FileName="src\GameController.cs" Line="1" Column="1" />
-      <File FileName="src\Model\AIEasyPlayer.cs" Line="1" Column="1" />
->>>>>>> master
+      <File FileName="src\HighScoreController.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BattleShip_final" expanded="True">
+            <Node name="BattleShip_final" expanded="True">
+              <Node name="src" expanded="True">
+                <Node name="HighScoreController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.BattleShip__final PreferredExecutionTarget="MonoDevelop.Default" />
