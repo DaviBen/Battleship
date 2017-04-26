@@ -1,7 +1,5 @@
 10
-Benjamin    127
 AAA         100
-Ben Test 2  98
 BBB         90
 CCC         80
 DDD         70
@@ -9,3 +7,5 @@ EEE         60
 FFF         50
 GGG         40
 HHH         30
+III         20
+JJJ         10
