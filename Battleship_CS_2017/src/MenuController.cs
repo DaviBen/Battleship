@@ -179,18 +179,22 @@ static class MenuController
 		const int TUTORIAL_HEADING = 40;
 
 		//Draw tutorial
-		SwinGame.DrawText("Instructions: How to Play   ", Color.White, GameResources.GameFont("Courier"), 270, TUTORIAL_HEADING);
+		SwinGame.DrawText("Instructions: How to Play   ", Color.White, GameResources.GameFont("Courier"), 280, TUTORIAL_HEADING);
 
 		SwinGame.DrawBitmap(GameResources.GameImage("Tutorial01"), 40, TUTORIAL_HEADING+80);
 		SwinGame.DrawText("- Place your ships onto the grid.", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING+330);
-        SwinGame.DrawText("- None of the ships can overlap.", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING + 350);
+		SwinGame.DrawText("- You choose the type of ship from the left", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING+350);
+		SwinGame.DrawText("  and its rotation with the upper arrows.", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING+365);
+        SwinGame.DrawText("- None of the ships can overlap.", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING + 390);
+		SwinGame.DrawText("- Click play when you are ready to begin.", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING + 410);
 
         SwinGame.DrawBitmap (GameResources.GameImage ("Tutorial02"), 430, TUTORIAL_HEADING+80);
-        SwinGame.DrawText("- Place your ships onto the grid.", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 330);
-        SwinGame.DrawText("- None of the ships can overlap.", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 350);
+        SwinGame.DrawText("- Click any square on the grid to attack.", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 330);
+        SwinGame.DrawText("- The square will turn red on a hit and", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 350);
+		SwinGame.DrawText("  blue on a miss.", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 365);
+		SwinGame.DrawText("- If you hit the enemy, attack again!", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 390);
+		SwinGame.DrawText("- You win by destroying all 5 ships.", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 410);
 
-
-        //DrawButtons(MAIN_MENU);
     }
 
 	/// <summary>
