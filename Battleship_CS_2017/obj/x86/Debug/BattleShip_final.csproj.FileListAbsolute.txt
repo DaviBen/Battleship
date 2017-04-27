@@ -44,6 +44,17 @@ H:\Battleship\Battleship_CS_2017\obj\x86\Debug\ConsoleApplication.pdb
 H:\Battleship\Battleship_CS_2017\bin\Debug\Resources\images\battleship02.png
 H:\Battleship\Battleship_CS_2017\obj\x86\Debug\BattleShip_final.csprojResolveAssemblyReference.cache
 H:\Battleship\Battleship_CS_2017\bin\Debug\Resources\images\battleship01.png
+<<<<<<< HEAD
 C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2017\bin\Debug\Resources\images\battleship01.png
 C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2017\bin\Debug\Resources\images\battleship02.png
 C:\Users\KwunShan\Documents\GitHub\Battleship\Battleship_CS_2017\obj\x86\Debug\BattleShip_final.csprojResolveAssemblyReference.cache
+=======
+<<<<<<< HEAD
+C:\Users\Maxxy1000\Desktop\GitHub\Battleship\Battleship_CS_2017\bin\Debug\Resources\images\battleship01.png
+C:\Users\Maxxy1000\Desktop\GitHub\Battleship\Battleship_CS_2017\bin\Debug\Resources\images\battleship02.png
+C:\Users\Maxxy1000\Desktop\GitHub\Battleship\Battleship_CS_2017\obj\x86\Debug\BattleShip_final.csprojResolveAssemblyReference.cache
+=======
+C:\Users\Benjamin\Battleship\Battleship_CS_2017\bin\Debug\Resources\images\battleship01.png
+C:\Users\Benjamin\Battleship\Battleship_CS_2017\bin\Debug\Resources\images\battleship02.png
+>>>>>>> bens_second_fix
+>>>>>>> b7fb90685bd09cd0afe2b893106efc30820777f9
