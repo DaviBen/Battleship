@@ -22,24 +22,17 @@
 =======
   <MonoDevelop.Ide.Workbench ActiveDocument="src\HighScoreController.cs">
     <Files>
-      <File FileName="src\GameLogic.cs" Line="1" Column="1" />
       <File FileName="src\HighScoreController.cs" Line="1" Column="1" />
+<<<<<<< HEAD
+      <File FileName="src\GameLogic.cs" Line="28" Column="5" />
+=======
 >>>>>>> bens_second_fix
+<<<<<<< HEAD
 >>>>>>> b7fb90685bd09cd0afe2b893106efc30820777f9
+=======
+>>>>>>> master
+>>>>>>> bens_second_fix
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="BattleShip_final" expanded="True">
-            <Node name="BattleShip_final" expanded="True">
-              <Node name="src" expanded="True">
-                <Node name="HighScoreController.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.BattleShip__final PreferredExecutionTarget="MonoDevelop.Default" />
