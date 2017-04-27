@@ -4,34 +4,10 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\DiscoveryController.cs">
-    <Files>
-      <File FileName="src\MenuController.cs" Line="48" Column="38" />
-      <File FileName="src\DiscoveryController.cs" Line="34" Column="55" />
-      <File FileName="src\Model\BattleShipsGame.cs" Line="59" Column="1" />
-=======
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\UtilityFunctions.cs">
-    <Files>
-      <File FileName="src\MenuController.cs" Line="303" Column="54" />
-      <File FileName="src\HighScoreController.cs" Line="152" Column="84" />
-      <File FileName="src\GameState.cs" Line="36" Column="15" />
-      <File FileName="src\GameController.cs" Line="324" Column="16" />
-      <File FileName="src\UtilityFunctions.cs" Line="236" Column="19" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\HighScoreController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\GameLogic.cs">
     <Files>
       <File FileName="src\HighScoreController.cs" Line="1" Column="1" />
-<<<<<<< HEAD
-      <File FileName="src\GameLogic.cs" Line="28" Column="5" />
-=======
->>>>>>> bens_second_fix
-<<<<<<< HEAD
->>>>>>> b7fb90685bd09cd0afe2b893106efc30820777f9
-=======
->>>>>>> master
->>>>>>> bens_second_fix
+      <File FileName="src\GameLogic.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
