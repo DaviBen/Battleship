@@ -4,6 +4,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="src\UtilityFunctions.cs">
     <Files>
       <File FileName="src\MenuController.cs" Line="303" Column="54" />
@@ -11,7 +12,26 @@
       <File FileName="src\GameState.cs" Line="36" Column="15" />
       <File FileName="src\GameController.cs" Line="324" Column="16" />
       <File FileName="src\UtilityFunctions.cs" Line="236" Column="19" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\HighScoreController.cs">
+    <Files>
+      <File FileName="src\GameLogic.cs" Line="1" Column="1" />
+      <File FileName="src\HighScoreController.cs" Line="1" Column="1" />
+>>>>>>> bens_second_fix
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BattleShip_final" expanded="True">
+            <Node name="BattleShip_final" expanded="True">
+              <Node name="src" expanded="True">
+                <Node name="HighScoreController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.BattleShip__final PreferredExecutionTarget="MonoDevelop.Default" />
