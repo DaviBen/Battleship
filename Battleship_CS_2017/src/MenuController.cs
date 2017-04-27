@@ -32,6 +32,7 @@ static class MenuController
 		},
 		new string[] {
 			"RETURN",
+            "RESTART",
 			"SURRENDER",
 			"QUIT"
 		},
@@ -66,8 +67,9 @@ static class MenuController
 	private const int SETUP_MENU_EXIT_BUTTON = 3;
 
 	private const int GAME_MENU_RETURN_BUTTON = 0;
-	private const int GAME_MENU_SURRENDER_BUTTON = 1;
-	private const int GAME_MENU_QUIT_BUTTON = 2;
+    private const int GAME_MENU_RESTART_BUTTON = 1;
+    private const int GAME_MENU_SURRENDER_BUTTON = 2;
+    private const int GAME_MENU_QUIT_BUTTON = 3;
 
 	private static readonly Color MENU_COLOR = SwinGame.RGBAColor(2, 167, 252, 255);
 
@@ -137,10 +139,28 @@ static class MenuController
 		return false;
 	}
 
-	/// <summary>
-	/// Draws the main menu to the screen.
+    /// <summary>
+	/// Handles input for the specified menu.
 	/// </summary>
-	public static void DrawMainMenu()
+	/// <param name="menu">the identifier of the menu being processed</param>
+	/// <param name="level">the vertical level of the menu</param>
+	/// <param name="xOffset">the xoffset of the menu</param>
+	/// <returns>false if a clicked missed the buttons. This can be used to check prior menus.</returns>
+	public static bool HandleTutorialInput()
+    {
+        if (SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.KeyTyped(KeyCode.vk_ESCAPE))
+        {
+            GameController.EndCurrentState();
+            return true;
+        }
+
+        return false;
+    }
+
+    /// <summary>
+    /// Draws the main menu to the screen.
+    /// </summary>
+    public static void DrawMainMenu()
 	{
 		//Clears the Screen to Black
 		//SwinGame.DrawText("Main Menu", Color.White, GameFont("ArialLarge"), 50, 50)
@@ -337,7 +357,10 @@ static class MenuController
 			case GAME_MENU_RETURN_BUTTON:
 				GameController.EndCurrentState();
 				break;
-			case GAME_MENU_SURRENDER_BUTTON:
+            case GAME_MENU_RESTART_BUTTON:
+                GameController.StartGame();
+                break;                
+            case GAME_MENU_SURRENDER_BUTTON:
 				GameController.EndCurrentState();
 				//end game menu
 				GameController.EndCurrentState();

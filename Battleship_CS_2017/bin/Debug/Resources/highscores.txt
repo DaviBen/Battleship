@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 10
 Best #2     165
 I'm the best165
@@ -9,3 +10,6 @@ DDD         70
 EEE         60
 FFF         50
 GGG         40
+=======
+0
+>>>>>>> 2f288aef63fa9c965f4dfd86eb570d4008b4b8f3
