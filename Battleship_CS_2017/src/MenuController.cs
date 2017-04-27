@@ -45,8 +45,8 @@ static class MenuController
 	private const int MENU_TOP = 575;
 	private const int MENU_LEFT = 30;
 	private const int MENU_GAP = 0;
-	private const int BUTTON_WIDTH = 75;
-	private const int BUTTON_HEIGHT = 15;
+	private const int BUTTON_WIDTH = 150;
+	private const int BUTTON_HEIGHT = 22;
 	private const int BUTTON_SEP = BUTTON_WIDTH + MENU_GAP;
 
 	private const int TEXT_OFFSET = 0;
@@ -179,18 +179,22 @@ static class MenuController
 		const int TUTORIAL_HEADING = 40;
 
 		//Draw tutorial
-		SwinGame.DrawText("Instructions: How to Play   ", Color.White, GameResources.GameFont("Courier"), 270, TUTORIAL_HEADING);
+		SwinGame.DrawText("Instructions: How to Play   ", Color.White, GameResources.GameFont("Courier"), 280, TUTORIAL_HEADING);
 
 		SwinGame.DrawBitmap(GameResources.GameImage("Tutorial01"), 40, TUTORIAL_HEADING+80);
 		SwinGame.DrawText("- Place your ships onto the grid.", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING+330);
-        SwinGame.DrawText("- None of the ships can overlap.", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING + 350);
+		SwinGame.DrawText("- You choose the type of ship from the left", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING+350);
+		SwinGame.DrawText("  and its rotation with the upper arrows.", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING+365);
+        SwinGame.DrawText("- None of the ships can overlap.", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING + 390);
+		SwinGame.DrawText("- Click play when you are ready to begin.", Color.White, GameResources.GameFont("Courier"), 50, TUTORIAL_HEADING + 410);
 
         SwinGame.DrawBitmap (GameResources.GameImage ("Tutorial02"), 430, TUTORIAL_HEADING+80);
-        SwinGame.DrawText("- Place your ships onto the grid.", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 330);
-        SwinGame.DrawText("- None of the ships can overlap.", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 350);
+        SwinGame.DrawText("- Click any square on the grid to attack.", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 330);
+        SwinGame.DrawText("- The square will turn red on a hit and", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 350);
+		SwinGame.DrawText("  blue on a miss.", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 365);
+		SwinGame.DrawText("- If you hit the enemy, attack again!", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 390);
+		SwinGame.DrawText("- You win by destroying all 5 ships.", Color.White, GameResources.GameFont("Courier"), 440, TUTORIAL_HEADING + 410);
 
-
-        //DrawButtons(MAIN_MENU);
     }
 
 	/// <summary>
@@ -222,13 +226,14 @@ static class MenuController
 		for (i = 0; i <= _menuStructure[menu].Length - 1; i++) {
 			int btnLeft = 0;
 			btnLeft = MENU_LEFT + BUTTON_SEP * (i + xOffset);
-			//SwinGame.FillRectangle(Color.White, btnLeft, btnTop, BUTTON_WIDTH, BUTTON_HEIGHT)
-			SwinGame.DrawTextLines(_menuStructure[menu][i], MENU_COLOR, Color.Black, GameResources.GameFont("Menu"), FontAlignment.AlignCenter, btnLeft + TEXT_OFFSET, btnTop + TEXT_OFFSET, BUTTON_WIDTH, BUTTON_HEIGHT);
+            //SwinGame.FillRectangle(Color.White, btnLeft, btnTop, BUTTON_WIDTH, BUTTON_HEIGHT)
+            SwinGame.DrawTextLines(_menuStructure[menu][i], MENU_COLOR, Color.Black, GameResources.GameFont("MenuButtons"), FontAlignment.AlignCenter, btnLeft + TEXT_OFFSET, btnTop + TEXT_OFFSET - 2, BUTTON_WIDTH, BUTTON_HEIGHT);
 
-			if (SwinGame.MouseDown(MouseButton.LeftButton) & IsMouseOverMenu(i, level, xOffset)) {
-				SwinGame.DrawRectangle(HIGHLIGHT_COLOR, btnLeft, btnTop, BUTTON_WIDTH, BUTTON_HEIGHT);
-			}
-		}
+            if (SwinGame.MouseDown(MouseButton.LeftButton) & IsMouseOverMenu(i, level, xOffset))
+            {
+                SwinGame.DrawRectangle(HIGHLIGHT_COLOR, btnLeft, btnTop, BUTTON_WIDTH, BUTTON_HEIGHT);
+            }
+        }
 	}
 
 	/// <summary>
