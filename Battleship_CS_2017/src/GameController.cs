@@ -281,7 +281,7 @@ public static class GameController
 				MenuController.HandleMainMenuInput();
 				break;
 			case GameState.ViewingTutorial:
-				MenuController.HandleMainMenuInput();
+				MenuController.HandleTutorialInput();
 				break;
 			case GameState.ViewingGameMenu:
 				MenuController.HandleGameMenuInput();
