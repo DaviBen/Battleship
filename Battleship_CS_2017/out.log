@@ -1,1 +1,6 @@
-Compilation succeeded - 5 warning(s)
+Microsoft (R) Visual C# Compiler version 4.6.1055.0
+for Microsoft (R) .NET Framework 4.5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+src\Model\AIPlayer.cs(20,18): warning CS0660: 'AIPlayer.Location' defines operator == or operator != but does not override Object.Equals(object o)
+src\Model\AIPlayer.cs(20,18): warning CS0661: 'AIPlayer.Location' defines operator == or operator != but does not override Object.GetHashCode()
