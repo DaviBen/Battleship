@@ -138,7 +138,10 @@ For i  = 1 To 5
         SwinGame.Delay(100)
         EndLoadingScreen(width, height)
     End Sub
-
+	'''
+	'''<summary>
+	''' Shows an animation while the game loads
+	'''</summary>
     Private Sub ShowLoadingScreen()
         _Background = SwinGame.LoadBitmap(SwinGame.PathToResource("SplashBack.png", ResourceKind.BitmapResource))
         SwinGame.DrawBitmap(_Background, 0, 0)
@@ -154,7 +157,10 @@ For i  = 1 To 5
 
         PlaySwinGameIntro()
     End Sub
-
+	'''
+	'''<summary>
+	''' plays the swin game splash screen 
+	'''</summary>
     Private Sub PlaySwinGameIntro()
         Const ANI_X As Integer = 143, ANI_Y As Integer = 134, ANI_W As Integer = 546, ANI_H As Integer = 327, ANI_V_CELL_COUNT As Integer = 6, ANI_CELL_COUNT As Integer = 11
 
@@ -173,7 +179,10 @@ For i  = 1 To 5
         SwinGame.Delay(1500)
 
     End Sub
-
+	'''
+	'''<summary>
+	''' Shows a message on the screen recived at call
+	'''</summary>
     Private Sub ShowMessage(ByVal message As String, ByVal number As Integer)
         Const TX As Integer = 310, TY As Integer = 493, TW As Integer = 200, TH As Integer = 25, STEPS As Integer = 5, BG_X As Integer = 279, BG_Y As Integer = 453
 
@@ -189,6 +198,10 @@ For i  = 1 To 5
         SwinGame.ProcessEvents()
     End Sub
 
+	'''
+	'''<summary>
+	''' frees up resorces aften loading screen ends as they are not required anymore
+	'''</summary>
     Private Sub EndLoadingScreen(ByVal width As Integer, ByVal height As Integer)
         SwinGame.ProcessEvents()
         SwinGame.Delay(500)
@@ -203,30 +216,58 @@ For i  = 1 To 5
         SwinGame.ChangeScreenSize(width, height)
     End Sub
 
+	'''
+	'''<summary>
+	''' adds a font
+	'''</summary>
     Private Sub NewFont(ByVal fontName As String, ByVal filename As String, ByVal size As Integer)
         _Fonts.Add(fontName, SwinGame.LoadFont(SwinGame.PathToResource(filename, ResourceKind.FontResource), size))
     End Sub
 
+	'''
+	'''<summary>
+	''' adds an image
+	'''</summary>
     Private Sub NewImage(ByVal imageName As String, ByVal filename As String)
         _Images.Add(imageName, SwinGame.LoadBitmap(SwinGame.PathToResource(filename, ResourceKind.BitmapResource)))
     End Sub
 
+	'''
+	'''<summary>
+	''' adds an image with a colour set too transparent
+	'''</summary>
     Private Sub NewTransparentColorImage(ByVal imageName As String, ByVal fileName As String, ByVal transColor As Color)
         _Images.Add(imageName, SwinGame.LoadBitmap(SwinGame.PathToResource(fileName, ResourceKind.BitmapResource), True, transColor))
     End Sub
 
+	'''
+	'''<summary>
+	''' adds an image with a colour set too transparent
+	'''</summary>
     Private Sub NewTransparentColourImage(ByVal imageName As String, ByVal fileName As String, ByVal transColor As Color)
         NewTransparentColorImage(imageName, fileName, transColor)
     End Sub
 
+	'''
+	'''<summary>
+	''' adds a sound 
+	'''</summary>
     Private Sub NewSound(ByVal soundName As String, ByVal filename As String)
         _Sounds.Add(soundName, Audio.LoadSoundEffect(SwinGame.PathToResource(filename, ResourceKind.SoundResource)))
     End Sub
 
+	'''
+	'''<summary>
+	''' adds music
+	'''</summary>
     Private Sub NewMusic(ByVal musicName As String, ByVal filename As String)
         _Music.Add(musicName, Audio.LoadMusic(SwinGame.PathToResource(filename, ResourceKind.SoundResource)))
     End Sub
 
+	'''
+	'''<summary>
+	''' removes all fonts
+	'''</summary>
     Private Sub FreeFonts()
         Dim obj As Font
         For Each obj In _Fonts.Values
@@ -234,6 +275,10 @@ For i  = 1 To 5
         Next
     End Sub
 
+	'''
+	'''<summary>
+	''' removes all images
+	'''</summary>
     Private Sub FreeImages()
         Dim obj As Bitmap
         For Each obj In _Images.Values
@@ -241,6 +286,10 @@ For i  = 1 To 5
         Next
     End Sub
 
+	'''
+	'''<summary>
+	''' removes all sounds from memory
+	'''</summary>
     Private Sub FreeSounds()
         Dim obj As SoundEffect
         For Each obj In _Sounds.Values
@@ -248,6 +297,10 @@ For i  = 1 To 5
         Next
     End Sub
 
+	'''
+	'''<summary>
+	''' removes all music from memory
+	'''</summary>
     Private Sub FreeMusic()
         Dim obj As Music
         For Each obj In _Music.Values
@@ -255,6 +308,10 @@ For i  = 1 To 5
         Next
     End Sub
 
+	'''
+	'''<summary>
+	''' frees all resources
+	'''</summary>
     Public Sub FreeResources()
         FreeFonts()
         FreeImages()

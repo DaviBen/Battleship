@@ -211,16 +211,28 @@ Module UtilityFunctions
         SwinGame.DrawFramerate(675, 585, GameFont("CourierSmall"))
     End Sub
 
+	'''
+	'''<summary>
+	''' shows an animation for the explosion
+	'''</summary>
     Public Sub AddExplosion(ByVal row As Integer, ByVal col As Integer)
         AddAnimation(row, col, "Splash")
     End Sub
 
+	'''
+	'''<summary>
+	''' starts a splash animation
+	'''</summary>
     Public Sub AddSplash(ByVal row As Integer, ByVal col As Integer)
         AddAnimation(row, col, "Splash")
     End Sub
 
     Private _Animations As New List(Of Sprite)()
 
+	'''
+	'''<summary>
+	''' add an animation to memory for later use
+	'''</summary>
     Private Sub AddAnimation(ByVal row As Integer, ByVal col As Integer, ByVal image As String)
         Dim s As Sprite
         Dim imgObj as Bitmap
@@ -239,6 +251,10 @@ Module UtilityFunctions
         _Animations.Add(s)
     End Sub
 
+	'''
+	'''<summary>
+	''' displays the animation by changing the sprite
+	'''</summary>
     Public Sub UpdateAnimations()
         Dim ended As New List(Of Sprite)()
         For Each s As Sprite In _Animations
@@ -254,12 +270,20 @@ Module UtilityFunctions
         Next
     End Sub
 
+	'''
+	'''<summary>
+	''' draws an animation too the screen
+	'''</summary>
     Public Sub DrawAnimations()
         For Each s As Sprite In _Animations
             SwinGame.DrawSprite(s)
         Next
     End Sub
 
+	'''
+	'''<summary>
+	''' animates all the animations on screen
+	'''</summary>
     Public Sub DrawAnimationSequence()
         Dim i as Integer
 For i  = 1 To ANIMATION_CELLS * FRAMES_PER_CELL
